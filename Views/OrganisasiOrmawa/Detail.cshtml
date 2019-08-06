@@ -1,0 +1,21 @@
+﻿@model Ormawa.ViewModels.OrganisasiOrmawaVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>Detail</h2>
+@{var x = 0 ;}
+@foreach (var i in Model.GetDetails)
+{
+    @i.Id
+    <br />
+    @i.Mahasiswa
+    <hr />
+    @i.OrganisasiOrmawa
+    <hr />
+    @i.StatusAnggota
+    <br />
+    x++;
+    
+   
+}
